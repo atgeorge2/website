@@ -8,8 +8,8 @@
     <title>Exercise 7: Typography</title>
     <!-- Google Fonts embed-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chicle&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+80s+Fade&display=swap" rel="stylesheet">
     <!-- End of Google Fonts embed--->
     <style>
       body {
@@ -23,7 +23,7 @@
         background-size: cover;
       }
       h1 {
-        font-family: "Chicle", serif;
+        font-family: "Rubik 80s Fade", system-ui;
         font-weight: 400;
         font-style: normal;
         font-size: 250%;
@@ -31,7 +31,7 @@
         text-transform: uppercase;
       }
       h2 {
-        font-family: "Chicle", serif;
+        font-family: "Rubik 80s Fade", system-ui;
         font-weight: 400;
         font-style: normal;
         font-size: 150%;
@@ -51,26 +51,28 @@
         font-size: 120%;
       }
       img {
-        border: 10px solid hsl(309, 100%, 57%);
+        border: 5px solid hsl(309, 100%, 57%);
       }
       #central {
-        width: 1200px;
+        width: 1920px;
       }
-      #containerA {
-        width: 25%;
-        float: left;
+      #containerMain {
+        width: 1000px;
+        margin: 50px auto 50px auto;
+        padding: 25px;
+        border: 10px solid hsl(309, 100%, 57%);
+        background-color: #ffffff;
       }
-      #containerB {
-        width: 47%;
-        padding-right: 26%;
-        float: right;
+      #navbar {
+        width: 100%;
+        height: 50px;
       }
     </style>
   </head>
 
   <body>
     <div id="central">
-      <div id="containerA">
+      <div id="containerMain">
         <h1>
           Spinach, Tofu and Sesame Stir-Fry
         </h1>
@@ -95,8 +97,6 @@
           <li>2 tablespoons toasted sesame seeds</li>
           <li>1 teaspoon sesame oil</li>
         </ul>
-      </div>
-      <div id="containerB">
         <img src="recipe-photo-Enhanced-SR.jpg" alt="An image of a plat of spinach, tofu and sesame stir-fry" width="500px"> <br>
         <h3>
           Preparation
