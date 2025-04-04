@@ -18,10 +18,13 @@
         font-style: normal;
         font-size: 20px;
         padding: 25px;
-        color: hsl(309, 100%, 57%);
+        animation-name: rainbowGlowText;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
         text-align: center;
-        background-image: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWV1dTNvNHB6eDFyYTEyd245Mng0cGxxOGh5YnVyeXBxMDgwMTBpYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/U3qYN8S0j3bpK/giphy.gif');
+        background-image: url('https://media.tenor.com/XQ9NtRcDxHoAAAAi/gif-girl.gif');
         background-size: cover;
+        background-color: black;
       }
       h1 {
         font-family: "Londrina Shadow", sans-serif;
@@ -40,6 +43,20 @@
         line-height: 0px;
         text-align: center;
       }
+      @keyframes rainbowGlowBorder {
+        0%   {border-color: hsl(309, 100%, 57%)}
+        25%  {border-color: yellow}
+        50%  {border-color: rgb(0, 255, 0)}
+        75%  {border-color: blue}
+        100% {border-color: hsl(309, 100%, 57%)}
+      }
+      @keyframes rainbowGlowText {
+        0%   {color: hsl(309, 100%, 57%)}
+        25%  {color: yellow}
+        50%  {color: rgb(0, 255, 0)}
+        75%  {color: blue}
+        100% {color: hsl(309, 100%, 57%)}
+      }
       #central {
         width: 1920px;
       }
@@ -49,6 +66,9 @@
         padding: 25px;
         border: 10px solid hsl(309, 100%, 57%);
         background-color: #ffffff;
+        animation-name: rainbowGlowBorder;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
       }
       #navbar {
         width: 1920px;
