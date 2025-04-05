@@ -12,6 +12,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Londrina+Solid:wght@100;300;400;900&display=swap" rel="stylesheet">
     <!-- End of Google Fonts embed--->
     <style>
+      @keyframes rainbowGlowBorder {
+        0%   {border-color: hsl(309, 100%, 57%)}
+        25%  {border-color: yellow}
+        50%  {border-color: rgb(0, 255, 0)}
+        75%  {border-color: blue}
+        100% {border-color: hsl(309, 100%, 57%)}
+      }
+      @keyframes rainbowGlowText {
+        0%   {color: hsl(309, 100%, 57%)}
+        25%  {color: yellow}
+        50%  {color: rgb(0, 255, 0)}
+        75%  {color: blue}
+        100% {color: hsl(309, 100%, 57%)}
+      }
       body {
         font-family: "Londrina Solid", sans-serif;
         font-weight: 400;
@@ -43,19 +57,28 @@
         line-height: 0px;
         text-align: center;
       }
-      @keyframes rainbowGlowBorder {
-        0%   {border-color: hsl(309, 100%, 57%)}
-        25%  {border-color: yellow}
-        50%  {border-color: rgb(0, 255, 0)}
-        75%  {border-color: blue}
-        100% {border-color: hsl(309, 100%, 57%)}
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: hsl(309, 100%, 57%);
       }
-      @keyframes rainbowGlowText {
-        0%   {color: hsl(309, 100%, 57%)}
-        25%  {color: yellow}
-        50%  {color: rgb(0, 255, 0)}
-        75%  {color: blue}
-        100% {color: hsl(309, 100%, 57%)}
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: hsl(291, 100%, 88%);
       }
       #central {
         width: 1920px;
@@ -80,7 +103,14 @@
 
   <body>
     <div id="navbar">
-      
+      <ul>
+        <li><a class="active" href="#home">home</a></li>
+        <li><a href= >regal jumper</a></li>
+        <li><a href= >wooly chafer</a></li>
+        <li><a href= >bee fly</a></li>
+        <li><a href= >sulawesi shrimp</a></li>
+        <li><a href= >THE WEB</a></li>
+      </ul>
     </div>
     <div id="central">
       <div id="containerMain">
