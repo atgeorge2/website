@@ -63,8 +63,48 @@
         padding: 0;
         overflow: hidden;
         background-color: hsl(309, 100%, 57%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 2000px;
       }
-
+      .home{
+         background-color: hsl(309, 100%, 57%); 
+        }
+      .home:hover{
+         background-color: hsl(291, 100%, 88%);
+        }
+      .regal{
+         background-color: rgb(255, 0, 0); 
+        }
+      .regal:hover{
+         background-color: hsl(0, 100%, 74%); 
+        }
+      .chafer{
+         background-color: orange; 
+        }
+      .chafer:hover{
+         background-color: hsl(39, 100%, 73%); 
+        }
+      .fly{
+         background-color: rgb(0, 255, 0); 
+        }
+      .fly:hover{
+         background-color: hsl(120, 100%, 81%); 
+        }
+      .shrimp{
+         background-color: hsl(202, 100%, 54%); 
+        }
+      .shrimp:hover{
+         background-color: hsl(203, 100%, 74%); 
+        }
+      .web{
+         background-color: hsl(277, 100%, 57%); 
+        }
+      .web:hover{
+         background-color: hsl(288, 100%, 78%); 
+        }
+      
       li {
         float: left;
       }
@@ -77,9 +117,6 @@
         text-decoration: none;
       }
 
-      li a:hover {
-        background-color: hsl(291, 100%, 88%);
-      }
       #central {
         width: 1920px;
       }
@@ -93,26 +130,18 @@
         animation-duration: 6s;
         animation-iteration-count: infinite;
       }
-      #navbar {
-        width: 1920px;
-        height: 104px;
-        background-color: #ffffff;
-      }
     </style>
   </head>
-
   <body>
-    <div id="navbar">
-      <ul>
-        <li><a class="active" href="#home">home</a></li>
-        <li><a href= >regal jumper</a></li>
-        <li><a href= >wooly chafer</a></li>
-        <li><a href= >bee fly</a></li>
-        <li><a href= >sulawesi shrimp</a></li>
-        <li><a href= >THE WEB</a></li>
-      </ul>
-    </div>
     <div id="central">
+      <ul>
+        <li><a class="home" href="#home">home</a></li>
+        <li><a class="regal" href= >regal jumper</a></li>
+        <li><a class="chafer" href= >wooly chafer</a></li>
+        <li><a class="fly" href= >bee fly</a></li>
+        <li><a class="shrimp" href= >sulawesi shrimp</a></li>
+        <li><a class="web" href= >THE WEB</a></li>
+      </ul>
       <div id="containerMain">
         <h1>
           MY FAVOURITE BUGS!!!!1!!1!
