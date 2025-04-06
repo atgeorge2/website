@@ -65,11 +65,17 @@
         left: 0;
         width: 100%;
       }
+      .imageBorder {
+        border: 0.75vw solid hsl(309, 100%, 57%);
+        animation-name: rainbowGlowBorder;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+      }
       .clickable {
         padding: 1vw;
       }
       .clickable:hover {
-        translate: 0px -10px;
+        translate: 0vw -1vw;
       }
       .home{
          background-color: hsl(309, 100%, 57%); 
@@ -125,8 +131,8 @@
         min-height: 90vw;
       }
       #containerMain {
-        position: absolute;
-        left: 16.5%;
+        position: relative;
+        right: 4.5%;
         width: 60vw;
         margin: 10vw auto 5vw auto;
         padding: 2.5vw;
